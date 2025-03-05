@@ -23,7 +23,8 @@ body {
   background: #fff;
   padding: 1rem;
   border-radius: 0.75rem;
-  width: min(350px, 100% - 20px);
+  margin-inline: auto;
+  width: min(350px, 100% - 40px);
   font-weight: 500;
   position: relative;
 }
