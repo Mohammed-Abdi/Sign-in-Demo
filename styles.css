@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f7;
+  color: #000000;
+  font-family: "inter", sans-serif;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  width: min(350px, 100% - 20px);
+  font-weight: 500;
+  position: relative;
+}
+
+.heading {
+  font-size: 0.75rem;
+  margin-inline: auto;
+  color: #00000075;
+}
+
+hr {
+  border: 1px solid #0000001b;
+}
+
+.separator {
+  color: #00000075;
+  font-size: 0.875rem;
+  padding-inline: 0.5rem;
+  background: #fff;
+  position: absolute;
+  top: 61%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #00000075;
+  position: absolute;
+  transform: translate(0.875rem, 0.75rem);
+  transition: all 0.3s ease-in-out;
+  cursor: text;
+}
+
+input {
+  border-radius: 0.5rem;
+  padding-block: 0.875rem 0.5rem;
+  padding-inline: 0.875rem;
+  border: 1px solid #0000001b;
+  width: 100%;
+  font-size: 0.875rem;
+  font-family: inherit;
+  font-weight: inherit;
+  background: #f5f5f7;
+  outline: none;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+  font-size: 0.6rem;
+  transform: translate(0.875rem, 0.2rem);
+}
+
+.signInButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  color: #fff;
+  padding-block: 0.75rem;
+  padding-inline: 0.5rem;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.otherMethods {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-top: 0.75rem;
+}
+
+.otherMethods img,
+i {
+  aspect-ratio: 1/1;
+  width: 1rem;
+  font-size: 1rem;
+  position: absolute;
+  left: 0.5rem;
+}
+
+.otherMethods button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  border: 1px solid #0000001b;
+  background: #fff;
+  font-weight: inherit;
+  font-family: inherit;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}

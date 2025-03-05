@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="description" content="signin form" />
+    <title>sign in</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <span class="heading">Sign in</span>
+      <hr />
+      <h1>Welcome</h1>
+      <form action="#">
+        <article>
+          <input type="email" id="email" required placeholder=" " />
+          <label for="email">Email</label>
+        </article>
+        <article>
+          <input type="password" id="password" required placeholder=" " />
+          <label for="password">Password</label>
+        </article>
+        <input type="submit" value="Sign in" class="signInButton" />
+      </form>
+
+      <span class="separator">or</span>
+      <hr />
+      <div class="otherMethods">
+        <button>
+          <img src="google icon.svg" alt="google" />Sign in with Google
+        </button>
+        <button><i class="bx bxl-apple"></i>Sign in with Apple</button>
+        <button>
+          <img src="facebook icon.svg" alt="facebook" />Sign in with Facebook
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
